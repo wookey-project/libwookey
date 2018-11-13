@@ -1,0 +1,14 @@
+config USR_LIB_WOOKEY
+  bool  "Wookey project binary IPC protocol stack"
+  default y
+  ---help---
+  Support for binary inter-process communication for
+  the wookey use case, including:
+    - mass storage control plane
+    - cryptographic control plane
+    - user interaction control plane
+config USR_LIB_WOOKEY_CFLAGS
+  string
+  default " -I../../libs/wookey/api " if USR_LIB_WOOKEY
+
+
