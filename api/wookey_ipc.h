@@ -1,5 +1,5 @@
-#ifndef IPC_H_
-#define IPC_H_
+#ifndef WOOKEY_IPC_H_
+#define WOOKEY_IPC_H_
 
 /* IPC based synchronization toolkit */
 
@@ -146,4 +146,4 @@ typedef union {
 } t_ipc_command;
 
 
-#endif /*! IPC_H_*/
+#endif /*! WOOKEY_IPC_H_*/
