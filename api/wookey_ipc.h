@@ -74,6 +74,10 @@ enum sync_magic {
     /** user menu settigs requests magics */
     MAGIC_SETTINGS_CMD                 = 0x90,
     MAGIC_SETTINGS_LOCK                = 0x91,
+    /** DFU metadata exchange */
+    MAGIC_DFU_HEADER_SEND              = 0xa0,
+    MAGIC_DFU_HEADER_VALID             = 0xa1,
+    MAGIC_DFU_HEADER_INVALID           = 0xa2,
     /** finishing with invalid */
     MAGIC_INVALID                      = 0xff,
 };
@@ -109,8 +113,9 @@ typedef struct  __attribute__((packed)) {
 /**/
 union data_block {
     uint8_t u8[32];
-    uint32_t u32[8];
     uint16_t u16[16];
+    uint32_t u32[8];
+    uint64_t u64[4];
     t_sc_request req;
 };
 
