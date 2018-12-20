@@ -78,6 +78,7 @@ enum sync_magic {
     MAGIC_DFU_HEADER_SEND              = 0xa0,
     MAGIC_DFU_HEADER_VALID             = 0xa1,
     MAGIC_DFU_HEADER_INVALID           = 0xa2,
+    MAGIC_DFU_DWNLOAD_FINISHED         = 0xa3,
     /** finishing with invalid */
     MAGIC_INVALID                      = 0xff,
 };
