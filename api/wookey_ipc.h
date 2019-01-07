@@ -90,7 +90,8 @@ enum sync_init_state {
     SYNC_DONE         = 3,
     SYNC_ACKNOWLEDGE  = 4,
     SYNC_UNKNOWN      = 5,
-    SYNC_FAILURE      = 6
+    SYNC_BADFILE      = 6,
+    SYNC_FAILURE      = 7
 };
 
 /* Smart vs Pin structure, mapped in data.u8 */
