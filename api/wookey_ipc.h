@@ -75,11 +75,12 @@ enum sync_magic {
     MAGIC_SETTINGS_CMD                 = 0x90,
     MAGIC_SETTINGS_LOCK                = 0x91,
     /** DFU metadata exchange */
-    MAGIC_DFU_HEADER_SEND              = 0xa0,
-    MAGIC_DFU_HEADER_VALID             = 0xa1,
-    MAGIC_DFU_HEADER_INVALID           = 0xa2,
-    MAGIC_DFU_DWNLOAD_FINISHED         = 0xa3,
-    MAGIC_DFU_WRITE_FINISHED           = 0xa4,
+    MAGIC_DFU_DWNLOAD_STARTED          = 0xa0,
+    MAGIC_DFU_HEADER_SEND              = 0xa1,
+    MAGIC_DFU_HEADER_VALID             = 0xa2,
+    MAGIC_DFU_HEADER_INVALID           = 0xa3,
+    MAGIC_DFU_DWNLOAD_FINISHED         = 0xa4,
+    MAGIC_DFU_WRITE_FINISHED           = 0xa5,
     /** finishing with invalid */
     MAGIC_INVALID                      = 0xff,
 };
