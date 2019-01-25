@@ -7,8 +7,4 @@ config USR_LIB_WOOKEY
     - mass storage control plane
     - cryptographic control plane
     - user interaction control plane
-config USR_LIB_WOOKEY_CFLAGS
-  string
-  default " -I../../libs/wookey/api " if USR_LIB_WOOKEY
-
 
