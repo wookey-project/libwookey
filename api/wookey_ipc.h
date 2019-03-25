@@ -155,5 +155,10 @@ typedef union {
     uint8_t                   magic; // first field of the two above
 } t_ipc_command;
 
+struct dmashm_info {
+    uint32_t addr;
+    uint16_t size;
+};
+
 
 #endif /*! WOOKEY_IPC_H_*/
