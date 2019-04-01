@@ -63,6 +63,8 @@ enum sync_magic {
     MAGIC_CRYPTO_PIN_CMD               = 0x62,
     MAGIC_CRYPTO_PIN_RESP              = 0x63,
     /** DMA 'buffer ready' command and response */
+    MAGIC_DMA_SHM_INFO_CMD             = 0x70,
+    MAGIC_DMA_SHM_INFO_RESP            = 0x71,
     MAGIC_DMA_BUF_READY_CMD            = 0x72,
     MAGIC_DMA_BUF_READY_RESP           = 0x73,
     /** USB vs storage synchronization control plane */
@@ -154,11 +156,5 @@ typedef union {
     struct  sync_command_data sync_cmd_data;
     uint8_t                   magic; // first field of the two above
 } t_ipc_command;
-
-struct dmashm_info {
-    uint32_t addr;
-    uint16_t size;
-};
-
 
 #endif /*! WOOKEY_IPC_H_*/
