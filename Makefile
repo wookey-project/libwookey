@@ -38,9 +38,11 @@ TODEL_DISTCLEAN += $(APP_BUILD_DIR)
 
 .PHONY: app
 
-default: all
+default: all doc
 
 all: $(APP_BUILD_DIR) lib
+
+doc:
 
 show:
 	@echo
