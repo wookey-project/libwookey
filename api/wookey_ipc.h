@@ -146,6 +146,7 @@ struct sync_command_data {
 
 struct dataplane_command {
     uint8_t  magic;
+    uint8_t  state;
     uint32_t sector_address;
     uint32_t num_sectors;
 };
