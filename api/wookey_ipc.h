@@ -3,7 +3,7 @@
 
 /* IPC based synchronization toolkit */
 
-#include "api/types.h"
+#include "libc/types.h"
 
 /*
  * generic synchronization specific binary IPC API
