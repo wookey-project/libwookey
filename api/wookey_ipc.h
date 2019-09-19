@@ -85,6 +85,8 @@ enum sync_magic {
     MAGIC_DFU_WRITE_FINISHED           = 0xa5,
     MAGIC_DFU_GET_FW_VERSION           = 0xa6,
     MAGIC_REBOOT_REQUEST               = 0xb0,
+    /* informational transmission */
+    MAGIC_INFORMATIONAL_MSG            = 0xc0,
     /** finishing with invalid */
     MAGIC_INVALID                      = 0xff,
 };
@@ -120,10 +122,11 @@ typedef struct  __attribute__((packed)) {
 
 /**/
 union data_block {
-    uint8_t u8[32];
-    uint16_t u16[16];
-    uint32_t u32[8];
-    uint64_t u64[4];
+    char     c[64];
+    uint8_t  u8[64];
+    uint16_t u16[32];
+    uint32_t u32[16];
+    uint64_t u64[8];
     t_sc_request req;
 };
 
