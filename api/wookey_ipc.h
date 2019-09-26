@@ -62,6 +62,8 @@ enum sync_magic {
     /** pin and pet name interaction command and response */
     MAGIC_CRYPTO_PIN_CMD               = 0x62,
     MAGIC_CRYPTO_PIN_RESP              = 0x63,
+    /** is authentication sequence passed ? */
+    MAGIC_AUTH_STATE_PASSED            = 0x64,
     /** DMA 'buffer ready' command and response */
     MAGIC_DMA_SHM_INFO_CMD             = 0x70,
     MAGIC_DMA_SHM_INFO_RESP            = 0x71,
