@@ -75,6 +75,8 @@ enum sync_magic {
     MAGIC_STORAGE_SCSI_BLOCK_NUM_CMD   = 0x84,
     MAGIC_STORAGE_SCSI_BLOCK_NUM_RESP  = 0x85,
     MAGIC_STORAGE_EJECTED              = 0x86,
+    MAGIC_STORAGE_PASSWD               = 0x87,
+    MAGIC_STORAGE_PASSWD_RESP          = 0x88,
     /** user menu settigs requests magics */
     MAGIC_SETTINGS_CMD                 = 0x90,
     MAGIC_SETTINGS_LOCK                = 0x91,
